@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>𝘕-𝘔𝘰𝘣𝘪𝘭𝘦 𝘳𝘦𝘨𝘦𝘥𝘪𝘵📲</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            font-family: 'Courier New', Courier, monospace;
+            color: #fff;
+            text-align: center;
+        }
+        h1 {
+            margin-top: 30px;
+            font-size: 28px;
+            color: cyan;
+        }
+        .button {
+            margin: 15px auto;
+            padding: 15px 25px;
+            width: 80%;
+            max-width: 300px;
+            font-size: 18px;
+            border: none;
+            border-radius: 25px;
+            background: linear-gradient(45deg, #ff0057, #7a00ff);
+            color: white;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            transition: 0.3s;
+            display: block;
+        }
+        .button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+        }
+        .qr-code {
+            margin: 30px auto;
+            max-width: 300px;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .qr-caption {
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: #ccc;
+        }
+        .dialog {
+            background-color: #000000cc;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 10px;
+            display: none;
+        }
+        .choice-button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 10px;
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>𝘕-𝘔𝘰𝘣𝘪𝘭𝘦 𝘳𝘦𝘨𝘦𝘥𝘪𝘵📲</h1>
+
+    <div class="qr-code">
+        <div class="qr-caption">Ủng hộ qua Vietinbank</div>
+        <img src="F594444C-B911-4F7D-802E-628A927E67A9.jpeg" width="100%" alt="QR Code">
+    </div>
+
+    <button class="button" onclick="showOptions('aimdata 🌟💫')">aimdata 🌟💫</button>
+    <button class="button" onclick="showOptions('trickshotm1887 🔫')">trickshotm1887 🔫</button>
+    <button class="button" onclick="showOptions('trickshotump 🫦')">trickshotump 🫦</button>
+    <button class="button" onclick="showOptions('facepanel 🚫')">facepanel 🚫</button>
+
+    <div id="optionDialog" class="dialog">
+        <p id="selectedOption">Chọn game:</p>
+        <button class="choice-button" onclick="redirectTo('ff')">FF Thường</button>
+        <button class="choice-button" onclick="redirectTo('ffmax')">FF Max</button>
+    </div>
+
+    <script>
+        function showOptions(optionName) {
+            document.getElementById('selectedOption').textContent = 'Chọn game cho: ' + optionName;
+            document.getElementById('optionDialog').style.display = 'block';
+        }
+
+        function redirectTo(game) {
+            if (game === 'ff') {
+                window.location.href = 'https://example.com/ff';
+            } else {
+                window.location.href = 'https://example.com/ffmax';
+            }
+        }
+    </script>
+</body>
+</html>
